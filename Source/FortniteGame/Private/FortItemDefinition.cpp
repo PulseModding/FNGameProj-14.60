@@ -159,6 +159,6 @@ UFortItemDefinition::UFortItemDefinition(const FObjectInitializer& ObjectInitial
         {
         ItemType = ItemType.RightChop(Index + 1);
         }
-    EditorTemplateId = FString(TEXT("" + ItemType + ":" + AssetName));
+//    EditorTemplateId = FString(TEXT("" + ItemType + ":" + AssetName));
 }
 

@@ -15,7 +15,7 @@ USkeletalMesh* UAthenaCharacterItemDefinition::GetPreviewBaseMesh() const
 {
     if (!HeroDefinition) return nullptr;
 
-    for (const TSoftObjectPtr<UFortHeroSpecialization>& Specialization : HeroDefinition->Specializations)
+    for (const TSoftObjectPtr<UFortHeroSpecialization>& Specialization : HeroDefinition->GetSpecializations())
     {
         if (UFortHeroSpecialization* FortHeroSpecialization = Specialization.LoadSynchronous())
         {
@@ -42,7 +42,7 @@ void UAthenaCharacterItemDefinition::GetPreviewSkeletalMeshes(TArray<USkeletalMe
 {
     if (!HeroDefinition) return;
 
-    for (const TSoftObjectPtr<UFortHeroSpecialization>& Specialization : HeroDefinition->Specializations)
+    for (const TSoftObjectPtr<UFortHeroSpecialization>& Specialization : HeroDefinition->GetSpecializations())
     {
         if (UFortHeroSpecialization* FortHeroSpecialization = Specialization.LoadSynchronous())
         {

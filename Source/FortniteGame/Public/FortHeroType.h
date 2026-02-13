@@ -30,6 +30,8 @@ public:
     }
     virtual USkeletalMesh* GetPreviewBaseMesh() const override;
     virtual void GetPreviewSkeletalMeshes(TArray<USkeletalMesh*>& OutMeshes, TArray<TSubclassOf<UAnimInstance>>& OutAnimClasses) const override;
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    const TArray<TSoftObjectPtr<UFortHeroSpecialization>>& GetSpecializations() const { return Specializations; }
 protected:
     /** If true, head accessory will be shown regardless of client option setting; Used for cases where the head accessory is a critical part of the character */
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true), Category = "Character Parts")
