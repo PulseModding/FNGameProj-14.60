@@ -33,7 +33,7 @@
 		},
 		{
 			"Name": "ForwardingChannels",
-			"Enabled": true
+			"Enabled": false
 		}
 	]
 }

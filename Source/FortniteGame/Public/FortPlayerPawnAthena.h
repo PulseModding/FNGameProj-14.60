@@ -42,7 +42,7 @@ class UForceFeedbackEffect;
 class UFortMobileInteractionComponent;
 class UFortPawnComponent_Convert;
 class UFortSkinWeightOverrideManager;
-class UCameraShake;
+class UCameraShakeBase;
 class UParticleSystemComponent;
 class USoundBase;
 class UTexture2D;
@@ -354,7 +354,7 @@ protected:
     UForceFeedbackEffect* DamageForceFeedback;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TSubclassOf<UCameraShake> DamageCameraShakeClass;
+    TSubclassOf<UCameraShakeBase> DamageCameraShakeClass;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer DamageTagsExcludedFromCameraShake;
@@ -393,7 +393,7 @@ public:
     
 protected:
     UFUNCTION(BlueprintCallable)
-    void SetDamageCameraShakeClass(TSubclassOf<UCameraShake> NewValue);
+    void SetDamageCameraShakeClass(TSubclassOf<UCameraShakeBase> NewValue);
     
 public:
     UFUNCTION(BlueprintCallable)

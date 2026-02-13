@@ -6,14 +6,14 @@
 #include "Templates/SubclassOf.h"
 #include "FortGameplayCueCameraShakeInfo.generated.h"
 
-class UCameraShake;
+class UCameraShakeBase;
 
 USTRUCT(BlueprintType)
 struct FFortGameplayCueCameraShakeInfo {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TSubclassOf<UCameraShake> Shake;
+    TSubclassOf<UCameraShakeBase> Shake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Scale;

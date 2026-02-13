@@ -11,7 +11,7 @@ class AActor;
 class ADecalActor;
 class UAudioComponent;
 class UFXSystemComponent;
-class UCameraShake;
+class UCameraShakeBase;
 class UNiagaraComponent;
 class UParticleSystemComponent;
 
@@ -30,13 +30,13 @@ public:
     
     UFortGameplayCueNotify_Burst();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnBurstNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance) const;
+    void OnBurstNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance) const;
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnBurstGeneric(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UFXSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance) const;
+    void OnBurstGeneric(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UFXSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance) const;
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-    void OnBurst(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance) const;
+    void OnBurst(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance) const;
     
 };
 

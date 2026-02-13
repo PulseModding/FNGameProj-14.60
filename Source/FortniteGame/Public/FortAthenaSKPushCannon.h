@@ -7,7 +7,7 @@
 
 class AFortPawn;
 class AFortPlayerPawn;
-class UCameraShake;
+class UCameraShakeBase;
 class UPhysicalMaterial;
 
 UCLASS(Blueprintable)
@@ -27,10 +27,10 @@ public:
     float RumbleIntensity;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* DriverCameraShake;
+    UCameraShakeBase* DriverCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* PassengerCameraShake;
+    UCameraShakeBase* PassengerCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FVector PlayerTorque;

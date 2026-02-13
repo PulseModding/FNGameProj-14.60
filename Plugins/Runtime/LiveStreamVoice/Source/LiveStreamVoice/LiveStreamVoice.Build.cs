@@ -10,7 +10,7 @@ public class LiveStreamVoice : ModuleRules {
             "Core",
             "CoreUObject",
             "Engine",
-            "ForwardingChannels",
+//            "ForwardingChannels",
         });
     }
 }

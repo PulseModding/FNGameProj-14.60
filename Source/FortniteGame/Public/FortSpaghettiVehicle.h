@@ -20,7 +20,7 @@ class AFortPlayerPawn;
 class AFortSpaghettiTowhookAttachableProjectile;
 class UFortSpaghettiVehicleConfigs;
 class UFortVehicleAudioVoice;
-class UCameraShake;
+class UCameraShakeBase;
 class UParticleSystemComponent;
 class UPrimitiveComponent;
 
@@ -29,7 +29,7 @@ class AFortSpaghettiVehicle : public AFortAthenaSKVehicle {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UCameraShake* CacheDriverCameraShake;
+    UCameraShakeBase* CacheDriverCameraShake;
     
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     float BounceContactRepulsionForce;

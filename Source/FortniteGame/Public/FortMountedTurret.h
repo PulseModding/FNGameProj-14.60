@@ -9,7 +9,7 @@
 
 class AFortPlayerPawn;
 class UFortMountedTurretConfigs;
-class UCameraShake;
+class UCameraShakeBase;
 
 UCLASS(Blueprintable)
 class AFortMountedTurret : public AFortAthenaSKMotorVehicle {
@@ -37,10 +37,10 @@ public:
     float RumbleIntensity;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* DriverCameraShake;
+    UCameraShakeBase* DriverCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* PassengerCameraShake;
+    UCameraShakeBase* PassengerCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AFortPlayerPawn* LocalPlayerPawn;

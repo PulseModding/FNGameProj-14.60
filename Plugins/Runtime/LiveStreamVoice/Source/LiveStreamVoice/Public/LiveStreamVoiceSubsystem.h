@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "Net/VoiceConfig.h"
-#include "ForwardingChannelFactory.h"
+//#include "ForwardingChannelFactory.h"
 #include "LiveStreamVoiceSubsystem.generated.h"
 
 UCLASS(Blueprintable)

@@ -12,7 +12,7 @@ class UCurveFloat;
 class UFortAntelopeVehicleConfigs;
 class UFortVehicleAudioVoice;
 class UMaterialInstanceDynamic;
-class UCameraShake;
+class UCameraShakeBase;
 class UParticleSystem;
 class UParticleSystemComponent;
 class UStaticMeshComponent;
@@ -67,10 +67,10 @@ public:
     bool bLocalPlayerADS;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* DriverCameraShake;
+    UCameraShakeBase* DriverCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* PassengerCameraShake;
+    UCameraShakeBase* PassengerCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AFortPlayerPawn* LocalPlayerPawn;

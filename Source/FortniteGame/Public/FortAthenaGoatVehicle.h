@@ -9,7 +9,7 @@
 class AFortPlayerPawn;
 class UCurveFloat;
 class UFortGoatVehicleConfigs;
-class UCameraShake;
+class UCameraShakeBase;
 class UParticleSystemComponent;
 
 UCLASS(Blueprintable, MinimalAPI)
@@ -71,10 +71,10 @@ public:
     bool bLocalPlayerADS;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* DriverCameraShake;
+    UCameraShakeBase* DriverCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* PassengerCameraShake;
+    UCameraShakeBase* PassengerCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AFortPlayerPawn* LocalPlayerPawn;

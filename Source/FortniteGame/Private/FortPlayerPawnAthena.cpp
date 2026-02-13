@@ -29,7 +29,7 @@ void AFortPlayerPawnAthena::SetMeshHeightAdjustAthena(float HeightAdjust) {
 void AFortPlayerPawnAthena::SetFallInstigator(AController* NewFallInstigator, FGameplayTagContainer NewFallingDamageTags) {
 }
 
-void AFortPlayerPawnAthena::SetDamageCameraShakeClass(TSubclassOf<UCameraShake> NewValue) {
+void AFortPlayerPawnAthena::SetDamageCameraShakeClass(TSubclassOf<UCameraShakeBase> NewValue) {
 }
 
 bool AFortPlayerPawnAthena::SetCharacterBodyVisibilityForPossession(bool bVisible) {

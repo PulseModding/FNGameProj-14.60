@@ -16,7 +16,7 @@ class AActor;
 class ADecalActor;
 class UAudioComponent;
 class UFXSystemComponent;
-class UCameraShake;
+class UCameraShakeBase;
 class UNiagaraComponent;
 class UParticleSystemComponent;
 
@@ -71,22 +71,22 @@ public:
     
     AFortGameplayCueNotify_Loop();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnRemovalNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnRemovalNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnRemovalGeneric(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UFXSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnRemovalGeneric(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UFXSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnRemoval(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnRemoval(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnRecurringNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnRecurringNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnRecurringGeneric(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UFXSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnRecurringGeneric(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UFXSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnRecurring(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnRecurring(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnLoopingStartNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents);
@@ -98,13 +98,13 @@ public:
     void OnLoopingStart(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnApplicationNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnApplicationNiagara(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UNiagaraComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnApplicationGeneric(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UFXSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnApplicationGeneric(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UFXSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnApplication(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShake* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
+    void OnApplication(AActor* MyTarget, const FGameplayCueParameters& Parameters, const TArray<UParticleSystemComponent*>& ParticleComponents, const TArray<UAudioComponent*>& AudioComponents, UCameraShakeBase* BurstCameraShakeInstance, ADecalActor* BurstDecalInstance);
     
 };
 

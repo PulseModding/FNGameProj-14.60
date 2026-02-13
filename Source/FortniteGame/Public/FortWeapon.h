@@ -66,7 +66,7 @@ class UFortWeaponFireModeData;
 class UFortWeaponItemDefinition;
 class UFortWorldItemDefinition;
 class UMaterialInterface;
-class UCameraShake;
+class UCameraShakeBase;
 class UNiagaraSystem;
 class UParticleSystem;
 class USceneComponent;
@@ -288,7 +288,7 @@ protected:
     TArray<TSoftObjectPtr<UNiagaraSystem>> ImpactNiagaraPhysicalSurfaceEffectAssets;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TSubclassOf<UCameraShake> ImpactCameraShake;
+    TSubclassOf<UCameraShakeBase> ImpactCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UForceFeedbackEffect* PrimaryForceFeedbackEffect;

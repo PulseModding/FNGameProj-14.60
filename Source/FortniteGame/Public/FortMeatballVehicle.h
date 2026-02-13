@@ -20,7 +20,7 @@ class UFortCameraMode;
 class UFortMeatballVehicleConfigs;
 class UFortVehicleAudioVoice;
 class UMaterialInstanceDynamic;
-class UCameraShake;
+class UCameraShakeBase;
 class UNiagaraComponent;
 class UParticleSystemComponent;
 
@@ -71,16 +71,16 @@ public:
     APlayerController* DrivingPlayerController;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* LandCameraShake;
+    UCameraShakeBase* LandCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TSubclassOf<UCameraShake> LandCameraShakeClass;
+    TSubclassOf<UCameraShakeBase> LandCameraShakeClass;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* DriverCameraShake;
+    UCameraShakeBase* DriverCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TSubclassOf<UCameraShake> DriverCameraShakeClass;
+    TSubclassOf<UCameraShakeBase> DriverCameraShakeClass;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float LandRumbleIntensity;

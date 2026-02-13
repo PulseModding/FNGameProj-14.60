@@ -11,7 +11,7 @@ class UFortFerretVehicleConfigs;
 class UFortVehicleAudioVoice;
 class UGameplayEffect;
 class UMaterialInstanceDynamic;
-class UCameraShake;
+class UCameraShakeBase;
 class UParticleSystemComponent;
 class USceneComponent;
 class UStaticMeshComponent;
@@ -36,10 +36,10 @@ public:
     bool bLocalPlayerADS;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* DriverCameraShake;
+    UCameraShakeBase* DriverCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* PassengerCameraShake;
+    UCameraShakeBase* PassengerCameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AFortPlayerPawn* LocalPlayerPawn;

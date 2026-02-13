@@ -6,7 +6,7 @@ class ADecalActor;
 class AEmitterCameraLensEffectBase;
 class UAudioComponent;
 class UFXSystemComponent;
-class UCameraShake;
+class UCameraShakeBase;
 
 USTRUCT(BlueprintType)
 struct FFortGameplayCueSpawnResult {
@@ -19,7 +19,7 @@ public:
     TArray<UAudioComponent*> AudioComponents;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UCameraShake* CameraShake;
+    UCameraShakeBase* CameraShake;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AEmitterCameraLensEffectBase* CameraLensEffect;
