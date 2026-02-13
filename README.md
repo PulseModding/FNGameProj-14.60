@@ -1,5 +1,10 @@
-# FNGameProj-14.30
-> This is a Unreal Project for modding a old Version of Fortnite (14.30) which has every c++ class recreated
+# Fork of Zylox's 14.30 project, modified for .60
+> This will have most stuff needed for modding recreated, hoping to improve the modding experience.
+
+
+
+# FNGameProj-14.60
+> This is a Unreal Project for modding a old Version of Fortnite (14.60) which has every c++ class recreated
 
 ## How To use
 
