@@ -565,7 +565,7 @@
 		},
 		{
 			"Name": "PluginBrowser",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "PostSplashScreen",
