@@ -14,3 +14,16 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
+Plugins/AsherUtils/AsherUtils.uplugin
+Plugins/AsherUtils/Resources/Icon40.png
+Plugins/AsherUtils/Source/AsherUtils/AsherUtils.Build.cs
+Plugins/AsherUtils/Source/AsherUtils/Private/AsherUtils.cpp
+Plugins/AsherUtils/Source/AsherUtils/Private/AsherUtilsCommands.cpp
+Plugins/AsherUtils/Source/AsherUtils/Private/AsherUtilsStyle.cpp
+Plugins/AsherUtils/Source/AsherUtils/Private/SCharacterCreationWindow.cpp
+Plugins/AsherUtils/Source/AsherUtils/Public/AsherUtils.h
+Plugins/AsherUtils/Source/AsherUtils/Public/AsherUtilsCommands.h
+Plugins/AsherUtils/Source/AsherUtils/Public/AsherUtilsStyle.h
+Plugins/AsherUtils/Source/AsherUtils/Public/SCharacterCreationWindow.h
+Plugins/GameFeatures/York/Content/Content/Items/Cosmetics/Characters/Character_StallionAviator_Asher.uasset
+Plugins/AsherUtils/README.md
